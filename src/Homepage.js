@@ -17,13 +17,13 @@ function Homepage() {
 
   return (
     <>
-    <div class="row"> 
+    <div class="rows"> 
   
       <div className="App">
-        <h1>Movie Details</h1>
+        <h1>ALL ABOUT MOVIES</h1>
         {
           mydata.map((movie) => (
-            <div class="column">
+            <div class="row">
             <div className="card2" key={movie.imdbID} style={{display:"center"}} >
             
     

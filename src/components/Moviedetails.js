@@ -13,16 +13,17 @@ function Moviedetails(){
             setMoviedetail(response.data));
     },[imdbID]);
     if(!moviedetail){
-        return <div>Loading data...</div>;
+        return <div>Please wait for a while </div>;
     }
 
     return(
         <div className="App">
             <h1>Movie Title :<br></br>{moviedetail.Title}</h1>
             <img src={moviedetail.Poster} alt={moviedetail.Title}/>
+              <h2> <p>Type:{moviedetail.Type}</p></h2>
            <h2> <p>Year:{moviedetail.Year}<br></br></p></h2>
-           <h2> <p>Type:{moviedetail.Type}</p></h2>
-
+           
+        
         </div>
     );
 

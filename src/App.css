@@ -1,13 +1,14 @@
 .App {
   text-align: center;
-  color: red;
-  background-image: linear-gradient(rgb(157, 185, 92),rgb(214, 116, 63),blue);
+  color: rgb(163, 47, 47);
+  background-color: hsl(351, 95%, 68%);
   
 }
-.column {
+.row {
   
   float: left;
-  width: 30%;
+  background-color: rgb(11, 29, 129);
+  width: 25%;
   padding: 10px;
 }
 
@@ -18,18 +19,18 @@
 /* Clear floats after the columns */
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 25vmin;
+
 }
 .grid{
-  max-width: 120rem;
-  display: grid;
+  max-width: 100rem;
+  display: -moz-grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:1.6rem;
+  gap:1.2rem;
 }
 .card2{
   padding: 2em;
-  border: 1px solid black;
+  border: 1px solid rgb(154, 57, 57);
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -45,11 +46,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(49, 192, 184);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #fb619c;
 }
 
 @keyframes App-logo-spin {
